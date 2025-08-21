@@ -20,7 +20,7 @@ app.use("/api/misc/", miscRouter);
 
 // --- Static File Serving and Catch-All Route ---
 // This section is the fix
-const __dirname = path.resolve();
+/*const __dirname = path.resolve();
 const clientDistPath = path.join(__dirname, 'Client', 'dist');
 
 // Serve static files from the React app
@@ -31,6 +31,6 @@ app.use(express.static(clientDistPath));
 app.get('*', (req, res) => {
   res.sendFile(path.join(clientDistPath, 'index.html'));
 });
-// --- End of Fix ---
+// --- End of Fix ---*/
 
 export default app;
